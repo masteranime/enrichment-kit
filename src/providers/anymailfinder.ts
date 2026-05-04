@@ -5,6 +5,7 @@
  * co-founder of Anymailfinder (https://anymailfinder.com).
  * See PR #2 for details on confidence scoring, timeout, and hit rate.
  */
+
 import { BaseProvider } from './base.js';
 import type { EnrichmentInput, EnrichmentOutput, ProviderCapability } from '../types.js';
 import { extractDomain } from '../utils/normalize.js';

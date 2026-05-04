@@ -5,7 +5,7 @@ import { extractDomain } from '../utils/normalize.js';
 export class AnymailFinderProvider extends BaseProvider {
   name = 'anymailfinder';
   costPerCall = 0.008;
-  typicalHitRate = 0.50;
+  typicalHitRate = 0.65;
   capabilities: ProviderCapability[] = ['email'];
 
   constructor(private apiKey: string) {
@@ -28,7 +28,7 @@ export class AnymailFinderProvider extends BaseProvider {
         Authorization: `Bearer ${this.apiKey}`,
       },
       body: JSON.stringify({ full_name: fullName, domain }),
-      timeoutMs: 15_000,
+      timeoutMs: 180_000,
     });
 
     if (!res.success || !res.results?.email) return null;
@@ -41,7 +41,7 @@ export class AnymailFinderProvider extends BaseProvider {
       lastName: input.lastName,
       fullName,
       companyDomain: domain,
-      confidence: verified ? 0.85 : 0.6,
+      confidence: verified ? 0.97 : 0.45,
       rawProviderData: res as unknown as Record<string, unknown>,
     });
   }

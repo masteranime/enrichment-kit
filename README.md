@@ -245,7 +245,7 @@ PRs welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Acknowledgments
 
-The Anymailfinder provider was tuned with input from [Alessandro Patti](https://www.linkedin.com/in/alessandropizzini/), co-founder of [Anymailfinder](https://anymailfinder.com), who reviewed the integration and contributed corrections to confidence scoring, timeout values, and hit rate calibration. This is exactly the kind of vendor-side knowledge open-source enrichment tooling needs more of.
+The Anymailfinder provider was tuned with input from the Anymailfinder team, who reviewed the integration and contributed corrections to confidence scoring, timeout values, and hit rate calibration. This is exactly the kind of vendor-side knowledge open-source enrichment tooling needs more of.
 
 If you work on a provider in this kit and want to contribute calibration improvements, [open an issue](https://github.com/masteranime/enrichment-kit/issues) — the same offer stands for everyone.
 
